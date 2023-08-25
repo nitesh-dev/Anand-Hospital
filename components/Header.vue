@@ -82,6 +82,11 @@ header {
     justify-content: space-between;
     gap: 1rem;
     align-items: center;
+    margin: 40px 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 10;
 }
 
 
