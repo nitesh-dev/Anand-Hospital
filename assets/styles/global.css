@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    font-family: 'Poppins';
+    font-family: 'Outfit';
     letter-spacing: 1px;
 }
 
@@ -9,30 +9,28 @@ body {
 }
 
 :root {
-    --max-page-width: 1280px;
+    --max-page-width: 1184px;
 
     --color-surface: rgb(255, 255, 255);
     --color-surface-variant: #E8F2FF;
-    --color-primary: #490341;
-    --color-secondary: #B1099E;
+    --color-primary: #0098DA;
+    --color-secondary: #A8CF45;
     --color-secondary-variant: #FC0393;
     --color-secondary-light: #f9eef8;
     --color-on-primary: white;
-    --color-on-surface: #664C63;
+    --color-on-surface: #113C4E;
     --color-on-surface-light: #909090;
 
 
-    --big-font-2: 48px;
-    --big-font: 32px;
-    --average-2-font: 24px;
-    --average-font: 20px;
+    --big-font-2: 56px;
+    --big-font: 48px;
+    --average-font: 32px;
+    --medium-2-font: 20px;
     --medium-font: 16px;
-    --medium-2-font: 16px;
-    --small-font: 12px;
+    --small-font: 14px;
 
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
-    /* -moz-osx-font-smoothing: grayscale; */
     -webkit-text-size-adjust: 100%;
 
     --page-gap: 24px
@@ -41,7 +39,7 @@ body {
 .page {
     max-width: var(--max-page-width);
     margin: auto;
-    padding: 0 var(--page-gap);
+    /* padding: 0 var(--page-gap); */
 }
 
 p {
@@ -54,8 +52,8 @@ h1,
 h2,
 h3,
 h4 {
-    font-family: 'Baloo';
-    font-weight: normal;
+    font-family: 'Work Sans';
+    font-weight: 600;
 }
 
 h1,
@@ -89,18 +87,7 @@ h4 {
     font-size: var(--medium-2-font);
 }
 
-h5 {
-    font-size: var(--medium-font);
-}
 
-
-button {
-    transition: all 200ms;
-}
-
-button:hover {
-    scale: 1.05;
-}
 
 a {
     color: var(--color-on-surface);

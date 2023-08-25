@@ -1,10 +1,12 @@
 <script setup lang='ts'>
 </script>
 <template>
-    <h1>Hello starter</h1>
+    <section class="landing">
+        <div class="page">
+            <Header active="/"></Header>
+        </div>
+    </section>
 </template>
 <style scoped>
-h1 {
-    color: red;
-}
+
 </style>
