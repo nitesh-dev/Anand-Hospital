@@ -118,6 +118,7 @@
     <Emergency/>
     <!-- <Specialists/> -->
     <Testimonail/>
+    <Blogs/>
 
 </template>
 <style scoped>
