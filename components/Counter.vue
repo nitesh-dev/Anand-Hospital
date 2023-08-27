@@ -137,6 +137,7 @@ section {
     display: grid;
     grid-template-rows: max-content auto max-content;
     margin-bottom: 110px;
+    margin-top: 110px;
 }
 
 section .label {

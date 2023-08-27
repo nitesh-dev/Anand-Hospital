@@ -116,6 +116,7 @@
     <HomeFacility/>
     <Counter/>
     <Emergency/>
+    <Specialists/>
 
 </template>
 <style scoped>
