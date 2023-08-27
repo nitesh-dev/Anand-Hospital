@@ -114,7 +114,8 @@
     <!-- about -->
     <About/>
     <HomeFacility/>
-    
+    <Counter/>
+
 </template>
 <style scoped>
 .landing {
