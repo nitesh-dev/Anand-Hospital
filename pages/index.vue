@@ -112,6 +112,7 @@
     </section>
 
     <!-- about -->
+    <About/>
 </template>
 <style scoped>
 .landing {
@@ -119,6 +120,7 @@
     background-image: url('../public/images/outline/landing-back.png');
     background-position: center;
     background-size: cover;
+    margin-bottom: 100px;
 }
 
 .landing .page {
