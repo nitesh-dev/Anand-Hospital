@@ -37,10 +37,14 @@ body {
 }
 
 .page {
-    max-width: var(--max-page-width);
-    margin: auto;
-    /* padding: 0 var(--page-gap); */
+    margin: 0 calc(max(0px, ((100% - var(--max-page-width)) * 0.5) - var(--page-gap) * 2));
 }
+
+.page > *{
+    margin-left: var(--page-gap);
+    margin-right: var(--page-gap);
+}
+
 
 p {
     color: var(--color-on-surface);

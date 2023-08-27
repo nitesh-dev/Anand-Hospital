@@ -79,37 +79,39 @@
             </div>
 
             <form>
+                <div>
                     <div>
-                        <div>
-                            <span>Name</span>
-                            <input type="text" placeholder="Your Name">
-                        </div>
-
-                        <div>
-                            <span>Email</span>
-                            <input type="text" placeholder="Your Email">
-                        </div>
-
-                        <div>
-                            <span>Service</span>
-                            <select>
-                                <option value="">Select Services</option>
-                                <option value="bed">Bed</option>
-                            </select>
-                        </div>
-
-                        <div>
-                            <span>Date</span>
-                            <input type="text" placeholder="Select Date">
-                        </div>
-
-                        <WidgetButton type="submit" style="margin-top: auto; height: 57px;"><span>Booking now</span>
-                        </WidgetButton>
+                        <span>Name</span>
+                        <input type="text" placeholder="Your Name">
                     </div>
-                </form>
+
+                    <div>
+                        <span>Email</span>
+                        <input type="text" placeholder="Your Email">
+                    </div>
+
+                    <div>
+                        <span>Service</span>
+                        <select>
+                            <option value="">Select Services</option>
+                            <option value="bed">Bed</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <span>Date</span>
+                        <input type="text" placeholder="Select Date">
+                    </div>
+
+                    <WidgetButton type="submit" style="margin-top: auto; height: 57px;"><span>Booking now</span>
+                    </WidgetButton>
+                </div>
+            </form>
 
         </div>
     </section>
+
+    <!-- about -->
 </template>
 <style scoped>
 .landing {
@@ -172,7 +174,6 @@
 
 .landing form {
     display: flex;
-    width: 100%;
     height: 181px;
     align-items: center;
     background-color: rgb(255, 255, 255);

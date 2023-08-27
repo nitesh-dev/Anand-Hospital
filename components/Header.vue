@@ -82,10 +82,12 @@ header {
     justify-content: space-between;
     gap: 1rem;
     align-items: center;
-    margin: 40px 0;
+    margin-top: 40px;
+    margin-bottom: 40px;
     position: absolute;
     top: 0;
-    width: 100%;
+    width: calc(100% - var(--page-gap) * 2);
+
     z-index: 10;
 }
 
