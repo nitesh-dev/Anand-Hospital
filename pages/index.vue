@@ -116,7 +116,8 @@
     <HomeFacility/>
     <Counter/>
     <Emergency/>
-    <Specialists/>
+    <!-- <Specialists/> -->
+    <Testimonail/>
 
 </template>
 <style scoped>
