@@ -136,6 +136,7 @@ section {
     padding: 8px 0;
     display: grid;
     grid-template-rows: max-content auto max-content;
+    margin-bottom: 110px;
 }
 
 section .label {
