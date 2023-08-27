@@ -113,6 +113,8 @@
 
     <!-- about -->
     <About/>
+    <HomeFacility/>
+    
 </template>
 <style scoped>
 .landing {
