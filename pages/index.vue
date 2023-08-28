@@ -119,6 +119,7 @@
     <!-- <Specialists/> -->
     <Testimonail/>
     <Blogs/>
+    <Footer></Footer>
 
 </template>
 <style scoped>
