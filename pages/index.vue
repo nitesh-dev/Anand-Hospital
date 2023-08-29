@@ -3,7 +3,7 @@
 <template>
     <section class="landing">
         <div class="page">
-            <Header active="/"></Header>
+            <Header active="/" :isOutline="false"></Header>
             <div class="content">
                 <div class="left">
                     <h1>

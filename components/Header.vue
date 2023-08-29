@@ -2,7 +2,8 @@
 
 
 defineProps<{
-    active: string
+    active: string,
+    isOutline: boolean
 }>()
 const links = Array<{
     name: string,
@@ -18,7 +19,7 @@ links.push({
 
 links.push({
     name: 'About Us',
-    url: 'about'
+    url: '/about'
 })
 
 
@@ -60,7 +61,7 @@ links.push({
         </div>
         <div class="right">
             <NuxtLink>Login</NuxtLink>
-            <WidgetButton>
+            <WidgetButton :class="{'outline': isOutline}">
                 <span>Call Now</span>
                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
                     <path
@@ -94,6 +95,11 @@ header {
 
 header img {
     height: 100%;
+}
+
+
+header button.outline{
+    border: 1px solid white;
 }
 
 
