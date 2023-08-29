@@ -4,6 +4,7 @@ import image from '../public/images/background/landing-about.png'
 <template>
 
     <OtherLanding active="/about"  :image="image" bread="About Us" title="About Our Hospital"/>
+    <About/>
     
 <!-- 
     <About/>

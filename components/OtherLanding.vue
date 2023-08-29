@@ -36,6 +36,7 @@ defineProps<{
 .landing {
     min-height: 597px;
     position: relative;
+    margin-bottom: 110px;
 }
 
 .landing .page {
