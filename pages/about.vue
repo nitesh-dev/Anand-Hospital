@@ -136,18 +136,166 @@ data.push({
         </div>
     </section>
 
-    <!-- 
-    <About/>
-    <HomeFacility/>
-    <Counter/>
-    <Emergency/>
-    <Testimonail/>
-    <Blogs/> -->
+    <!-- about2 -->
+
+    <section class="about2">
+        <div class="page">
+            <span>Caring For The Health Of You And Your Family.</span>
+            <h3>We Provide All Aspects Of Medical Practice For Your Whole Family!</h3>
+            <div class="container">
+                <div class="left">
+                    <h5>Welcome to ANAND, where we offer comprehensive medical care tailored to every member of your family.
+                    </h5>
+                    <p>Our dedicated team of healthcare professionals is committed to providing you and your loved ones with
+                        personalized and compassionate healthcare services. We understand the importance of family health.
+                    </p>
+                    <div class="list">
+                        <div
+                            v-for="item in ['Family-Centered Care', 'Preventive Services', 'Vaccinations and Immunizations']">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+                                <path
+                                    d="M8.33333 0C3.74167 0 0 3.74167 0 8.33333C0 12.925 3.74167 16.6667 8.33333 16.6667C12.925 16.6667 16.6667 12.925 16.6667 8.33333C16.6667 3.74167 12.925 0 8.33333 0ZM12.3167 6.41667L7.59167 11.1417C7.475 11.2583 7.31667 11.325 7.15 11.325C6.98333 11.325 6.825 11.2583 6.70833 11.1417L4.35 8.78333C4.10833 8.54167 4.10833 8.14166 4.35 7.9C4.59167 7.65833 4.99167 7.65833 5.23333 7.9L7.15 9.81666L11.4333 5.53333C11.675 5.29167 12.075 5.29167 12.3167 5.53333C12.5583 5.775 12.5583 6.16667 12.3167 6.41667Z"
+                                    fill="#A8CF45" />
+                            </svg>
+                            <span>{{ item }}</span>
+                        </div>
+                    </div>
+                    <WidgetButton><span>More About Us..</span></WidgetButton>
+
+                </div>
+                <div class="right">
+                    <img src="../public/images/background/background1.png" class="top">
+                    <img src="../public/images/background/background2.png" class="center">
+                    <img src="../public/images/background/background3.png" class="bottom">
+
+                    <div class="outline">
+                        <img src="../public/images/outline/star.png" class="star">
+                        <img src="../public/images/outline/circle.png" class="circle">
+                    </div>
+
+                </div>
+
+                
+            </div>
+        </div>
+    </section>
+
     <Footer></Footer>
 </template>
 
 
+<!-- Family-Centered Care
+Preventive Services
+Vaccinations and Immunizations -->
+
+
 <style scoped>
+.about2 {
+    min-height: 515px;
+    margin-top: 110px;
+}
+
+.about2 .page>span {
+    color: var(--color-primary);
+    margin-top: 0;
+}
+
+.about2 h3 {
+    margin-top: 17px;
+    max-width: 780px;
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.about2 .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+}
+
+
+.about2 .right {
+    min-height: 402px;
+    position: relative;
+}
+
+.about2 .right>img {
+    display: block;
+    height: 118px;
+    object-fit: cover;
+    border-radius: 30px;
+    box-shadow: 0px 4px 44px 0px rgba(0, 0, 0, 0.19);
+}
+
+.about2 .right .top {
+    margin-right: auto;
+    width: 272px;
+}
+
+.about2 .right .center {
+    margin-left: auto;
+    width: 345px;
+    margin-right: 20px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.about2 .right .bottom {
+    margin-left: 80px;
+    width: 304px;
+
+}
+
+
+.about2 h5 {
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Outfit';
+    margin: 0;
+    margin-bottom: 15px;
+    margin-top: 70px;
+    color: black;
+}
+
+
+.about2 button{
+    margin-top: 32px;
+}
+
+
+/* list */
+.about2 .list{
+    margin-left: 15px;
+    margin-top: 28px;
+}
+
+.about2 .list div{
+    display: flex;
+    align-items: center;
+    gap: 11px;
+}
+
+
+/* outline */
+.about2 .outline .star {
+    position: absolute;
+    z-index: -1;
+    right: 136px;
+    top: 40px;
+}
+
+.about2 .outline .circle {
+    position: absolute;
+    z-index: -1;
+    left: 80px;
+    bottom: 78px;
+
+}
+
+
+
+
+/* ----------------- features section ----------- */
 .features {
     margin-top: 210px;
     min-height: 615px;
@@ -279,9 +427,10 @@ data.push({
 
 /* --------------------- specialist section -------------- */
 
-.specialist{
+.specialist {
     margin-top: 110px;
 }
+
 .specialist .page>span {
     text-align: center;
     display: block;
@@ -299,14 +448,14 @@ data.push({
     text-align: center;
 }
 
-.specialist .card-holder{
+.specialist .card-holder {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 32px;
     margin-top: 62px;
 }
 
-.specialist .card{
+.specialist .card {
     box-shadow: 0px 0px 42px 0px rgba(0, 0, 0, 0.10);
     padding: 24px;
     border-radius: 30px;
@@ -316,12 +465,12 @@ data.push({
 
 /* heading */
 
-.specialist .card>img{
+.specialist .card>img {
     width: 100%;
     border-radius: 30px;
 }
 
-.specialist .heading{
+.specialist .heading {
     height: 77px;
     display: flex;
     flex-direction: column;
@@ -334,22 +483,23 @@ data.push({
     transform: translateY(-50%);
 }
 
-.specialist .heading h5, .specialist .heading span{
+.specialist .heading h5,
+.specialist .heading span {
     color: white;
     font-weight: normal;
 }
 
-.specialist .heading span{
+.specialist .heading span {
     opacity: 0.8;
 }
 
-.specialist .heading h5{
+.specialist .heading h5 {
     margin: 0;
     font-size: 18px;
     text-align: center;
 }
 
-.specialist .heading span{
+.specialist .heading span {
     display: block;
     font-size: 14px;
     text-align: center;
@@ -357,7 +507,7 @@ data.push({
 
 
 /* done */
-.specialist .done{
+.specialist .done {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -365,16 +515,19 @@ data.push({
     transform: translateY(-15px);
 }
 
-.specialist .done p{
+.specialist .done p {
     margin: 0;
 }
 
 /* rating */
-.specialist .rating{
+.specialist .rating {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 9px;
 }
 
-</style>
+
+
+
+/* ---------------------------  */</style>
