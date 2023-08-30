@@ -84,7 +84,7 @@ defineProps<{
 }
 
 .landing .content .left{
-    max-width: 480px;
+    max-width: 510px;
     width: 100%;
 }
 
