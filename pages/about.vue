@@ -180,6 +180,7 @@ data.push({
         </div>
     </section>
 
+    <Question/>
     <Footer></Footer>
 </template>
 
@@ -193,6 +194,8 @@ Vaccinations and Immunizations -->
 .about2 {
     min-height: 515px;
     margin-top: 110px;
+    margin-bottom: 110px;
+
 }
 
 .about2 .page>span {
