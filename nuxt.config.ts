@@ -9,7 +9,7 @@ export default defineNuxtConfig({
     // modules: ['navigation', 'pagination'], // all modules are imported by default
   },
   devtools: { enabled: false },
-  css: ["@/assets/styles/global.css"],
+  css: ["@/assets/styles/global.css", "@/assets/styles/form.css"],
   app: {
     head: {
       charset: "utf-8",
