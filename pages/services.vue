@@ -70,6 +70,48 @@ import image from '../public/images/background/landing-service.png'
     </section>
     <Booking/>
 
+    <div class="page shadow">
+        <div></div>
+    </div>
+
+    <section class="treatment">
+        <div class="page">
+            <div class="detail">
+                <div class="image-holder">
+                    <img src="../public/images/background/care.png">
+                    <img src="../public/images/background/care2.png">
+                </div>
+                <div class="content">
+                    <span>About ANAND Hospital</span>
+                    <h3>We Are Always Ensure Best Treatment Your Child</h3>
+                    <p>Anand Children Hospital is one of the largest Pediatric Super Specialty Hospital of South Gujarat located at the center of the Surat City. It is the 1st Pediatric Hospital in Gujarat </p>
+                    <div class="list">
+                        <ul>
+                            <li>Always Open</li>
+                            <li>Reporting & Analysis</li>
+                            <li>Specialist Doctor</li>
+                            <li>Technical Medical audit</li>
+                        </ul>
+                        <ul>
+                            <li>Ambulance Facility</li>
+                            <li>Health Certificates</li>
+                            <li>Laboratory Test</li>
+                            <li>Referral Services</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="images">
+                <img src="../public/images/background/care3.png">
+                <img src="../public/images/background/care4.png">
+                <img src="../public/images/background/care5.png">
+                <img src="../public/images/background/care6.png">
+            </div>
+
+        </div>
+    </section>
+
     <Question />
     <Footer></Footer>
 </template>
@@ -77,8 +119,77 @@ import image from '../public/images/background/landing-service.png'
 
 
 <style scoped>
+
+
+.treatment {
+    margin-top: 110px;
+    margin-bottom: 110px;
+    
+}
+
+.treatment .detail{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 46px;
+}
+
+.treatment .detail .image-holder{
+    display: flex;
+    gap: 24px;
+    max-width: 428px;
+}
+
+.treatment .image-holder img{
+    border-radius: 30px;
+    object-fit: cover;
+}
+
+
+.treatment .content span{
+    color: var(--color-primary);
+    display: block;
+}
+
+.treatment .content h3{
+    margin-top: 17px;
+    margin-bottom: 32px;
+}
+
+.treatment .list{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.treatment ul{
+    padding: 0;
+    padding-left: 16px;
+}
+
+.treatment ul li{
+    margin-bottom: 8px;
+}
+
+.treatment .images{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+.treatment .images img{
+    width: 272px;
+    height: 179px;
+    border-radius: 30px;
+    object-fit: cover;
+}
+
+
+
+
+
+/* ------------------- facilities ------------------ */
 .facilities {
     margin-top: 110px;
+    margin-bottom: 110px;
 }
 
 .facilities .page>span {
@@ -192,4 +303,25 @@ import image from '../public/images/background/landing-service.png'
     gap: 12px;
     justify-content: center;
 }
+
+
+
+
+
+/* extra */
+
+ .page.shadow{
+    position: relative;
+ }
+
+ .page.shadow div{
+    position: absolute;
+    width: 360px;
+    height: 360px;
+    right: 0;
+    background-color: var(--color-primary);
+    transform: translateY(-50%);
+    filter: blur(315px);
+    z-index: -1;
+ }
 </style>
