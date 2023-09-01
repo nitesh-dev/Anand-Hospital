@@ -7,6 +7,7 @@ import image from '../public/images/background/landing-service.png'
 </script>
 <template>
     <OtherLanding active="/services" :image="image" bread="Services" title="Services Our Hospital" />
+
     <section class="facilities">
         <div class="page">
             <span>Our Facilities</span>
@@ -67,6 +68,7 @@ import image from '../public/images/background/landing-service.png'
 
         </div>
     </section>
+    <Booking/>
 
     <Question />
     <Footer></Footer>
