@@ -148,7 +148,7 @@ form.desktop {
     position: absolute;
     transform: translateY(-50%);
     top: 0;
-    width: 100%;
+    width: calc(100% - var(--page-gap) * 2);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -166,7 +166,7 @@ form .circle {
     opacity: 0.15;
 }
 
-form .star{
+form .star {
     position: absolute;
     z-index: -1;
     right: 126px;
@@ -328,4 +328,25 @@ footer .copyright p {
     width: 40px;
     border: 1px solid #404040;
     border-radius: 50%;
-}</style>
+}
+
+
+
+
+
+@media only screen and (max-width: 1100px) {
+
+    footer .content {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+@media only screen and (max-width: 700px) {
+
+    footer .content {
+        grid-template-columns: 100%;
+        gap: 30px;
+    }
+}
+</style>

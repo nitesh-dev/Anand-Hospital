@@ -61,7 +61,7 @@ links.push({
         </div>
         <div class="right">
             <NuxtLink>Login</NuxtLink>
-            <WidgetButton :class="{'outline': isOutline}">
+            <WidgetButton :class="{ 'outline': isOutline }">
                 <span>Call Now</span>
                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
                     <path
@@ -98,7 +98,7 @@ header img {
 }
 
 
-header button.outline{
+header button.outline {
     border: 1px solid white;
 }
 
@@ -133,16 +133,23 @@ header .center a.active {
 
 
 /* --------------------- right -------------- */
-header .right{
+header .right {
     display: flex;
     align-items: center;
     gap: 1.8rem;
 }
 
-header .right a{
+header .right a {
     font-weight: 600;
     text-decoration: underline;
 }
 
 
+
+@media only screen and (max-width: 1100px) {
+    header .center {
+        display: none;
+    }
+
+}
 </style>

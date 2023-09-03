@@ -112,15 +112,14 @@
     </section>
 
     <!-- about -->
-    <About/>
-    <HomeFacility/>
-    <Counter/>
-    <Emergency/>
+    <About />
+    <HomeFacility />
+    <Counter />
+    <Emergency />
     <!-- <Specialists/> -->
-    <Testimonail/>
-    <Blogs/>
+    <Testimonail />
+    <Blogs />
     <Footer></Footer>
-
 </template>
 <style scoped>
 .landing {
@@ -142,6 +141,11 @@
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
     align-items: center;
+}
+
+
+.landing .content img {
+    width: 100%;
 }
 
 .landing h1 svg {
@@ -222,5 +226,18 @@
     padding: 0 22px;
     margin-top: 8px;
 
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 1000px) {
+    .landing .content {
+
+        grid-template-columns: 100%;
+    }
 }
 </style>
