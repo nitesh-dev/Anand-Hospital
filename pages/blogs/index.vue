@@ -1,7 +1,7 @@
 <script setup lang='ts'>
 import slugify from 'slugify'
 
-import image from '~/public/images/background/landing-about.png'
+import image from '~/public/images/background/landing-blogs.png'
 
 const readMoreUrl = '/blogs/readmore/' + slugify("Some Of The Most Common Children's Diseases")
 
@@ -125,12 +125,111 @@ const readMoreUrl = '/blogs/readmore/' + slugify("Some Of The Most Common Childr
         </div>
     </section>
 
+    <section class="facility">
+        <div class="page">
+            <div class="heading">
+                <div>
+                    <span>Our Facilities</span>
+                    <h3>Latest Technologies for Your Health</h3>
+                </div>
+                <p>Anand Children Hospital is one of the largest Pediatric Super Specialty Hospital of South Gujarat located
+                    at the center of the Surat City. </p>
+            </div>
+
+            <div class="image-holder">
+                <img src="~/public/images/blog/blog5.png">
+                <div>
+                    <span> ·  June 14, 2017</span>
+                    <h4>6 Tips For Maintaining Children's Mental Health When Sick</h4>
+                    <p>Anand Children Hospital is one of the largest Pediatric Super Specialty Hospital of South Gujarat
+                        located at the center of the Surat City. sit amet, consectetur</p>
+                    <p>Our mission is "Towards Playful Health & Intact Survival with Humane Touch" for all.sit amet,
+                        consectetur adipisicing elisit amet, consectetur adipisicing eli</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                        et dolore magna aliqua.</p>
+
+                    <NuxtLink :to="readMoreUrl">Read More...</NuxtLink>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <Footer></Footer>
 </template>
 
 
 
 <style scoped>
+.facility {
+    margin-top: 110px;
+}
+
+.facility .heading {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+}
+
+.facility .heading span {
+    display: block;
+    color: var(--color-primary);
+}
+
+.facility .heading h3 {
+    margin-top: 17px;
+    max-width: 354px;
+}
+
+.facility .heading p{
+    margin: 0;
+    max-width: 480px;
+    margin-top: 30px;
+}
+
+
+.facility .image-holder{
+    margin-top: 90px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    align-items: center;
+}
+
+.facility .image-holder img{
+    width: 100%;
+    min-height: 372px;
+    object-fit: cover;
+    border-radius: 30px;
+    display: block;
+}
+
+
+.facility .image-holder span{
+    color: var(--color-secondary);
+    display: block;
+}
+.facility .image-holder h4{
+    font-size: 18px;
+    margin-top: 8px;
+    margin-bottom: 22px;
+}
+
+.facility .image-holder p{
+    margin: 8px 0;
+}
+
+.facility .image-holder a{
+    margin-top: 30px;
+    display: block;
+    color: var(--color-primary);
+}
+
+
+
+
+
+
+/* ---------------- blogs section -------------- */
 .blogs {
     margin-top: 110px;
 }
