@@ -309,7 +309,7 @@ footer hr {
 /* copyright */
 
 footer .copyright {
-    height: 100px;
+    min-height: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -395,6 +395,14 @@ footer .copyright p {
 
     footer {
         margin-top: 440px;
+    }
+
+    footer .copyright{
+        flex-direction: column-reverse;
+        align-items: start;
+        margin-top: 40px;
+        gap: 20px;
+        padding-bottom: 30px;
     }
 
 

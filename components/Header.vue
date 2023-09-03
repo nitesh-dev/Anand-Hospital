@@ -1,4 +1,9 @@
 <script setup lang='ts'>
+const navContainer = ref<HTMLDivElement>()
+
+function toggleNav() {
+    navContainer.value!!.classList.toggle('show')
+}
 
 
 defineProps<{
@@ -47,7 +52,7 @@ links.push({
 
 </script>
 <template>
-    <header>
+    <header class="desktop">
         <img src="../public/images/logo.png" alt="logo">
         <div class="center">
             <NuxtLink :to="item.url" v-for="item in links" :class="{ 'active': active == item.url }">
@@ -75,9 +80,116 @@ links.push({
 
         </div>
     </header>
+
+    <header class="phone">
+            <div class="holder">
+                <img src="../public/images/logo.png" alt="logo">
+                <div class="menu" @click="toggleNav()">
+                    <img src="../public/images/icons/nav-icon.png" alt="nav">
+                </div>
+            </div>
+
+            <div ref="navContainer" class="nav-container">
+                <div class="nav-background" @click="toggleNav()"></div>
+                <div class="nav">
+                    <NuxtLink  :to="item.url" v-for="item in links" :class="{ 'active': active == item.url }" >{{ item.name }}</NuxtLink>
+                </div>
+            </div>
+        </header>
 </template>
 <style scoped>
-header {
+
+
+
+
+/* header phone */
+
+header.phone {
+    margin-top: 50px;
+    display: none;
+    height: 64px;
+    border-radius: 12px;
+}
+
+header.phone .holder{
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+
+}
+
+header.phone .menu{
+    margin-top: 12px;
+    margin-right: 12px;
+}
+
+header.phone .menu img{
+    width: 28px;
+    height: 28px;
+}
+
+header.phone img{
+    height: 45px;
+    display: block;
+}
+
+header.phone a {
+    display: block;
+}
+
+/*  ------------------ nav -------------- */
+
+header .nav-background {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 199;
+    top: 0;
+    right: 0;
+    display: none;
+    background-color: transparent;
+}
+
+header .nav {
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    z-index: 200;
+    top: 0;
+    right: 0;
+    background-color: var(--color-on-surface);
+    transform: translateX(100%);
+    transition: all 200ms;
+}
+
+header .nav-container.show .nav {
+    transform: translateX(0);
+}
+
+header .nav-container.show .nav-background {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.35);
+}
+
+header .nav {
+    padding: 2rem 1.5rem;
+}
+
+header .nav a {
+    color: white;
+    display: block;
+    padding: 0.4em 0;
+}
+
+
+
+
+
+
+
+/* header desktop */
+header.desktop {
     height: 64px;
     display: flex;
     justify-content: space-between;
@@ -93,12 +205,12 @@ header {
 }
 
 
-header img {
+header.desktop img {
     height: 100%;
 }
 
 
-header button.outline {
+header.desktop button.outline {
     border: 1px solid white;
 }
 
@@ -147,8 +259,12 @@ header .right a {
 
 
 @media only screen and (max-width: 1100px) {
-    header .center {
+    header.desktop {
         display: none;
+    }
+
+    header.phone{
+        display: block;
     }
 
 }

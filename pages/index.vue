@@ -247,15 +247,21 @@
 
 @media only screen and (max-width: 700px) {
 
-    .landing form{
+    .landing .content {
+        margin-top: 40px;
+
+    }
+
+    .landing form {
         display: block;
     }
+
     .landing form>div {
         grid-template-columns: 100%;
 
     }
 
-    .landing form button{
+    .landing form button {
         max-width: 180px;
         margin: auto;
     }
