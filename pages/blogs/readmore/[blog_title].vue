@@ -175,12 +175,29 @@ const readMoreUrl = '/blogs/readmore/' + slugify("Some Of The Most Common Childr
                         </div>
                     </div>
 
-
                     <div class="card">
                         <h5>Social icons</h5>
-                        <div>
-                            <img src="~/public/images/icons/facebook-icon2.png">
+                        <div class="socials">
+                            <div class="icon">
+                                <img src="~/public/images/icons/facebook-icon3.png">
+                            </div>
+
+                            <div class="icon">
+                                <img src="~/public/images/icons/twitter-icon.png">
+                            </div>
+
+                            <div class="icon">
+                                <img src="~/public/images/icons/insta-icon3.png">
+                            </div>
+
+                            <div class="icon">
+                                <img src="~/public/images/icons/dribble-icon2.png">
+                            </div>
                         </div>
+                    </div>
+
+                    <div class="card grad">
+                        <h5>New Posts</h5>
                     </div>
                 </div>
 
@@ -437,14 +454,34 @@ const readMoreUrl = '/blogs/readmore/' + slugify("Some Of The Most Common Childr
 }
 
 
-.blogs .sidebar .links{
+.blogs .sidebar .links {
     display: flex;
     flex-direction: column;
     gap: 16px;
 }
 
-.blogs .sidebar .links a{
+.blogs .sidebar .links a {
     color: var(--color-primary);
     font-size: 18px;
+}
+
+
+/* social */
+
+.blogs .sidebar .socials{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+
+.blogs .sidebar .socials .icon{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: linear-gradient(319deg, hsla(198, 100%, 43%, 0.2) 4.91%, hsla(77, 59%, 54%, 0.2) 90.27%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 </style>
