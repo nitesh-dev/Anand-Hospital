@@ -1,5 +1,5 @@
 <script setup lang='ts'>
-import image from '../public/images/background/landing-service.png'
+import image from '../public/images/background/landing-appointment.png'
 
 
 const data = ['Search Nearest Clinic Of Bootamins', 'Select Your Services Option', 'Fill Out The Appointment Form', 'Meet With Doctor At Bootamins Clinic']
@@ -8,7 +8,7 @@ const data = ['Search Nearest Clinic Of Bootamins', 'Select Your Services Option
 
 </script>
 <template>
-    <OtherLanding active="/services" :image="image" bread="Services" title="Services Our Hospital" />
+    <OtherLanding active="/appointment" :image="image" bread="Appointment" title="Appointment" />
 
     <Booking />
 
