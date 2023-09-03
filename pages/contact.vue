@@ -1,10 +1,5 @@
 <script setup lang='ts'>
-import image from '../public/images/background/landing-service.png'
-
-
-const data = ['Search Nearest Clinic Of Bootamins', 'Select Your Services Option', 'Fill Out The Appointment Form', 'Meet With Doctor At Bootamins Clinic']
-
-
+import image from '../public/images/background/landing-contact.png'
 
 </script>
 <template>
