@@ -1,6 +1,9 @@
 <script setup lang='ts'>
 
 import profile1 from '../public/images/profile/profile-test1.png'
+import profile2 from '../public/images/profile/profile-test2.png'
+import profile3 from '../public/images/profile/profile-test3.png'
+import profile4 from '../public/images/profile/profile-test4.png'
 
 const data = Array<{
     image: string,
@@ -18,10 +21,24 @@ data.push({
 })
 
 data.push({
-    image: profile1,
+    image: profile2,
     message: '“Dr Sachin and his team gave wonderful treatment to my daughter. It is the best hospital I ever visited.”',
     name: '-Alex Thomas',
     role: "NICU"
+})
+
+data.push({
+    image: profile3,
+    message: '“Best hospital in surat. Dr.chetan shah is a good pediatrician doctor for child. good service..”',
+    name: '-Pinal Viral Naik',
+    role: "Hospital"
+})
+
+data.push({
+    image: profile4,
+    message: '“Best hospital in surat. Dr.chetan shah is a good pediatrician doctor for child. good service..”',
+    name: '-Pinal Viral Naik',
+    role: "Hospital"
 })
 
 data.push({
@@ -32,18 +49,21 @@ data.push({
 })
 
 data.push({
-    image: profile1,
+    image: profile2,
     message: '“Dr Sachin and his team gave wonderful treatment to my daughter. It is the best hospital I ever visited.”',
     name: '-Alex Thomas',
     role: "NICU"
 })
 
 data.push({
-    image: profile1,
-    message: '“Dr Sachin and his team gave wonderful treatment to my daughter. It is the best hospital I ever visited.”',
-    name: '-Alex Thomas',
-    role: "NICU"
+    image: profile3,
+    message: '“Best hospital in surat. Dr.chetan shah is a good pediatrician doctor for child. good service..”',
+    name: '-Pinal Viral Naik',
+    role: "Hospital"
 })
+
+
+
 
 
 const deskData = Array<{
@@ -116,7 +136,7 @@ const effect = {
 
                             <div class="card" v-if="slide.length > 0">
                                 <img :src="slide[0].image">
-                                <p>"{{ slide[0].message }}"</p>
+                                <p>{{ slide[0].message }}</p>
                                 <span class="name">{{ slide[0].name }} / </span>
                                 <span>{{ slide[0].role }}</span>
                             </div>
@@ -124,7 +144,7 @@ const effect = {
 
                             <div class="card" v-if="slide.length > 1">
                                 <img :src="slide[1].image">
-                                <p>"{{ slide[1].message }}"</p>
+                                <p>{{ slide[1].message }}</p>
                                 <span class="name">{{ slide[1].name }} / </span>
                                 <span>{{ slide[1].role }}</span>
                             </div>
@@ -132,7 +152,7 @@ const effect = {
 
                             <div class="card small" v-if="slide.length > 2" style="margin-left: auto;">
                                 <img :src="slide[2].image">
-                                <p>"{{ slide[2].message }}"</p>
+                                <p>{{ slide[2].message }}</p>
                                 <span class="name">{{ slide[2].name }} / </span>
                                 <span>{{ slide[2].role }}</span>
                             </div>
@@ -141,7 +161,7 @@ const effect = {
 
                             <div class="card small" v-if="slide.length > 3" style="margin-right: auto;">
                                 <img :src="slide[3].image">
-                                <p>"{{ slide[3].message }}"</p>
+                                <p>{{ slide[3].message }}</p>
                                 <span class="name">{{ slide[3].name }} / </span>
                                 <span>{{ slide[3].role }}</span>
                             </div>
