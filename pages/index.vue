@@ -188,12 +188,12 @@
 
 .landing form {
     display: flex;
-    height: 181px;
+    min-height: 181px;
     align-items: center;
     background-color: rgb(255, 255, 255);
     border-radius: 32px;
     box-shadow: 0px 25px 96px -28px rgba(0, 0, 0, 0.1);
-    padding: 0 40px;
+    padding: 40px 40px;
     margin-bottom: 20px;
 }
 
@@ -225,10 +225,7 @@
     font-size: 14px;
     padding: 0 22px;
     margin-top: 8px;
-
 }
-
-
 
 
 
@@ -236,8 +233,31 @@
 
 @media only screen and (max-width: 1000px) {
     .landing .content {
-
         grid-template-columns: 100%;
+    }
+
+    .landing form>div {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+        gap: 2rem;
+    }
+}
+
+
+@media only screen and (max-width: 700px) {
+
+    .landing form{
+        display: block;
+    }
+    .landing form>div {
+        grid-template-columns: 100%;
+
+    }
+
+    .landing form button{
+        max-width: 180px;
+        margin: auto;
     }
 }
 </style>

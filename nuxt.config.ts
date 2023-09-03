@@ -8,7 +8,7 @@ export default defineNuxtConfig({
     // styleLang: 'css',
     // modules: ['navigation', 'pagination'], // all modules are imported by default
   },
-  devtools: { enabled: false },
+  devtools: { enabled: true },
   css: ["@/assets/styles/global.css", "@/assets/styles/form.css"],
   app: {
     head: {

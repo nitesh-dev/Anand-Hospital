@@ -131,13 +131,16 @@ const data = ["Pediatric Dentistry", "Pediatric Physiotherapy", "Radiology Depar
 </template>
 <style scoped>
 section {
-    height: 320px;
+    min-height: 320px;
     background-color: black;
     padding: 8px 0;
-    display: grid;
-    grid-template-rows: max-content auto max-content;
     margin-bottom: 110px;
     margin-top: 110px;
+}
+
+section .page{
+    margin-top: 68px;
+    margin-bottom: 68px;
 }
 
 section .label {
@@ -164,6 +167,8 @@ section .holder {
     align-items: center;
     justify-content: space-between;
     height: 100%;
+    margin-top: 48px;
+    margin-bottom: 48px;
 }
 
 section .icon-holder {
@@ -192,5 +197,29 @@ section .card h2 {
 
 section .card span {
     color: white;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 1100px) {
+    section .holder {
+        grid-template-columns: 1fr 1fr;
+        gap: 47px;
+    }
+}
+
+
+
+@media only screen and (max-width: 800px) {
+    section .holder {
+        grid-template-columns: 100%;
+    }
+
+    section .holder .card{
+        justify-content: center;
+    }
 }
 </style>

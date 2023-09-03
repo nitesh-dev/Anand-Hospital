@@ -68,7 +68,7 @@ section {
     align-items: center;
 }
 
-.grid .left{
+.grid .left {
     position: relative;
 }
 
@@ -93,9 +93,10 @@ section p {
 }
 
 
-section .schedule{
+section .schedule {
     margin-bottom: 38px;
 }
+
 section .schedule div {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -111,7 +112,7 @@ section .schedule div span:first-child {
 }
 
 /* service */
-.left .service{
+.left .service {
     position: absolute;
     right: 0;
     top: 150px;
@@ -127,12 +128,12 @@ section .schedule div span:first-child {
     gap: 8px;
 }
 
-.service svg{
+.service svg {
     box-shadow: 0px 5px 11px 0px rgba(215, 237, 156, 0.56);
     border-radius: 50%;
 }
 
-.service span{
+.service span {
     display: block;
     color: var(--color-primary);
     font-weight: 500;
@@ -149,12 +150,36 @@ section .schedule div span:first-child {
     height: 100%;
 }
 
-.left .pill{
+.left .pill {
     position: absolute;
     right: 0;
     bottom: 100px;
     z-index: 2;
     width: 71px;
     transform: translateX(60%);
+}
+
+
+
+
+
+@media only screen and (max-width: 900px) {
+    .grid {
+        grid-template-columns: 100%;
+        gap: 46px;
+    }
+
+    .left .pill{
+        display: none;
+    }
+
+    .left .service {
+        right: 8px;
+        transform: translateX(0);
+    }
+
+    .full-outline{
+        display: none;
+    }
 }
 </style>

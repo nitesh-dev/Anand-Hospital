@@ -35,7 +35,7 @@ data.push({
     <section>
         <div class="page">
             <div class="content">
-                <div>
+                <div class="header">
                     <span>Our Facilities</span>
                     <h3>Latest Technologies for Your Health</h3>
                 </div>
@@ -48,7 +48,7 @@ data.push({
             <div class="detail">
                 <img src="../public/images/background/doctor.png">
                 <div class="card-holder">
-                    <div class="card" v-for="item, index in data" :class="{'variant': index == 1 || index == 2}">
+                    <div class="card" v-for="item, index in data" :class="{ 'variant': index == 1 || index == 2 }">
                         <div class="svg-holder">
                             <img v-if="index == 0" src="../public/images/icons/bed.png">
                             <img v-else-if="index == 1" src="../public/images/icons/microscope.png">
@@ -136,12 +136,12 @@ section h3 {
     padding: 24px;
 }
 
-.detail .card.variant{
-    background-color:hsla(77, 59%, 54%, 0.1);
+.detail .card.variant {
+    background-color: hsla(77, 59%, 54%, 0.1);
 }
 
-.detail .card.variant .svg-holder{
-    background-color:hsla(77, 59%, 54%, 0.2);
+.detail .card.variant .svg-holder {
+    background-color: hsla(77, 59%, 54%, 0.2);
 }
 
 .detail .svg-holder {
@@ -169,4 +169,42 @@ section h3 {
 }
 
 
+
+
+
+
+
+
+
+@media only screen and (max-width: 900px) {
+
+    .outline {
+        top: -30px;
+        width: 80%;
+    }
+
+    .content .header {
+        margin-bottom: 80px;
+    }
+
+    section h3 {
+        max-width: unset;
+    }
+
+    .content {
+        display: block;
+    }
+
+    .detail {
+        grid-template-columns: 100%;
+    }
+}
+
+
+
+@media only screen and (max-width: 700px) {
+    .detail .card-holder {
+        grid-template-columns: 100%;
+    }
+}
 </style>

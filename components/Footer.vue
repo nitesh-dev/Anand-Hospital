@@ -12,11 +12,11 @@
                         <input type="text" placeholder="Enter your email..">
                         <button type="submit">Subscribe</button>
                     </div>
+                    <button class="desk" type="submit">Subscribe</button>
                 </div>
 
                 <!-- outline -->
-                <svg class="circle" xmlns="http://www.w3.org/2000/svg" width="483" height="243" viewBox="0 0 483 243"
-                    fill="none">
+                <svg class="circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 483 243" fill="none">
                     <path fill-rule="evenodd" clip-rule="evenodd"
                         d="M241.505 75.9838C333.224 75.9838 407.578 150.337 407.578 242.057H365.16C365.16 173.764 309.798 118.401 241.505 118.401C173.212 118.401 117.85 173.764 117.85 242.057H75.432C75.432 150.337 149.785 75.9838 241.505 75.9838Z"
                         fill="#336BB7" />
@@ -141,8 +141,12 @@
 <style scoped>
 /* form */
 
+form .desk {
+    display: none;
+}
+
 form.desktop {
-    height: 265px;
+    min-height: 265px;
     background: linear-gradient(335deg, #0098DA 0%, #A8CF45 100%);
     border-radius: 30px;
     position: absolute;
@@ -164,6 +168,8 @@ form .circle {
     left: 96px;
     bottom: -4px;
     opacity: 0.15;
+    max-width: 480px;
+    width: 100%;
 }
 
 form .star {
@@ -343,10 +349,54 @@ footer .copyright p {
 
 
 @media only screen and (max-width: 700px) {
-
+    footer form{
+        padding: 40px 16px;
+    }
     footer .content {
         grid-template-columns: 100%;
         gap: 30px;
+        padding-top: 100px;
     }
+
+    form .circle {
+        top: 10px;
+        transform: translateX(-50%);
+        left: 50%;
+        bottom: unset;
+        width: 80%;
+    }
+
+    form .desk {
+        display: block;
+        height: 60px;
+        border: 1px solid white;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        margin-top: 24px !important;
+    }
+
+    form .input {
+        grid-template-columns: 100%;
+        height: 60px;
+    }
+
+    form input {
+        padding: 0 24px;
+    }
+
+    form .input button {
+        display: none !important;
+    }
+
+    form.desktop {
+        transform: translateY(-100%);
+        top: -70px;
+    }
+
+    footer {
+        margin-top: 440px;
+    }
+
+
 }
 </style>

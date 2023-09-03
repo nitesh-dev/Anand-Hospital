@@ -96,12 +96,14 @@ section .page>span {
 
 section h3 {
     text-align: center;
-    margin: 0;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 section .page>p {
     text-align: center;
-    margin: 32px 0;
+    margin-top: 32px;
+    margin-bottom: 32px;
 }
 
 

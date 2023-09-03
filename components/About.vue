@@ -112,7 +112,7 @@ section .profile {
 
 /* right */
 
-.right{
+.right {
     position: relative;
     padding-left: 30px;
 }
@@ -136,17 +136,59 @@ section .profile {
     background-color: rgba(226, 223, 223, 0.42);
 }
 
-.right .holder svg{
+.right .holder svg {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-.right .bottom{
+.right .bottom {
     margin-left: auto;
     margin-right: 12px;
 }
 
 
+
+
+
+@media only screen and (max-width: 1100px) {
+    section .grid {
+        gap: 40px;
+
+    }
+}
+
+
+@media only screen and (max-width: 900px) {
+    section .grid {
+        grid-template-columns: 100%
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .right .top {
+        width: 60%;
+    }
+
+    .right{
+        padding-left: 0;
+    }
+
+    .right .bottom {
+        margin-left: auto;
+        width: 90%;
+    }
+
+    .right .image-holder{
+        margin-bottom: 25px;
+    }
+
+    .right .holder {
+        display: none;
+    }
+
+
+}
 </style>

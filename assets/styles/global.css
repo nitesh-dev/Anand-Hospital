@@ -40,7 +40,7 @@ body {
     margin: 0 calc(max(0px, ((100% - var(--max-page-width)) * 0.5) - var(--page-gap) * 2));
 }
 
-.page > *{
+.page>* {
     margin-left: var(--page-gap);
     margin-right: var(--page-gap);
 }
@@ -153,33 +153,28 @@ button.primary-outline {
 
 
 
-/* @media only screen and (max-width: 700px) {
-    .page {
-        padding: 0 16px;
-    }
+@media only screen and (max-width: 700px) {
 
-    h1 {
-        font-size: calc(var(--big-font) - 12px);
-    }
-
-    h2 {
-        font-size: calc(var(--average-2-font) - 4px);
-    }
-
-    h3 {
-        font-size: calc(var(--average-font) - 2px);
+    :root {
+        --big-font-2: 32px;
+        --big-font: 48px;
+        --average-font: 24px;
+        --medium-2-font: 20px;
+        --medium-font: 16px;
+        --small-font: 14px;
     }
 
 }
 
-@media only screen and (max-width: 600px) {
-    .page {
-        padding: 0 12px;
+
+@media only screen and (max-width: 800px) {
+    :root {
+        --page-gap: 16px
     }
-} */
+}
 
 @media only screen and (max-width: 600px) {
-    .page {
-        padding: 0 12px;
+    :root {
+        --page-gap: 12px
     }
-} 
+}
