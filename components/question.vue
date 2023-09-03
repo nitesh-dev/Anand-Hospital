@@ -163,10 +163,30 @@ h3 {
 
 
 /* outline */
-.holder .star{
+.holder .star {
     position: absolute;
     z-index: -1;
     top: 100px;
     right: 50%;
+}
+
+
+
+@media only screen and (max-width: 900px) {
+    .holder {
+        gap: 40px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .holder {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 40px;
+    }
+
+    .holder .left{
+        width: 100%;
+    }
 }
 </style>

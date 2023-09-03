@@ -175,12 +175,12 @@ data.push({
 
                 </div>
 
-                
+
             </div>
         </div>
     </section>
 
-    <Question/>
+    <Question />
     <Footer></Footer>
 </template>
 
@@ -261,18 +261,18 @@ Vaccinations and Immunizations -->
 }
 
 
-.about2 button{
+.about2 button {
     margin-top: 32px;
 }
 
 
 /* list */
-.about2 .list{
+.about2 .list {
     margin-left: 15px;
     margin-top: 28px;
 }
 
-.about2 .list div{
+.about2 .list div {
     display: flex;
     align-items: center;
     gap: 11px;
@@ -533,4 +533,79 @@ Vaccinations and Immunizations -->
 
 
 
-/* ---------------------------  */</style>
+
+
+
+@media only screen and (max-width: 1200px) {
+    .specialist .card-holder {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .features .info {
+        grid-template-columns: 100%;
+    }
+
+    .features .right .card-holder {
+        position: static;
+    }
+
+    .features .progress-holder {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .features {
+        margin-top: 110PX;
+    }
+
+    .about2 .container {
+        grid-template-columns: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 900px) {
+    .specialist .card-holder {
+        grid-template-columns: 1fr 1fr;
+        gap: 24px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .features .right .card-holder {
+        grid-template-columns: 100%;
+    }
+
+    .features .progress-holder {
+        grid-template-columns: 100%;
+    }
+
+    .specialist .card-holder {
+        grid-template-columns: 100%;
+    }
+}
+
+
+@media only screen and (max-width: 500px) {
+    .about2 .right .top {
+        width: 70%;
+        border-radius: 17px;
+
+    }
+
+    .about2 .right .center {
+        width: 90%;
+        margin-right: 0;
+        border-radius: 17px;
+    }
+
+    .about2 .right .bottom {
+        margin-left: 0;
+        width: 80%;
+        border-radius: 17px;
+
+    }
+}
+</style>

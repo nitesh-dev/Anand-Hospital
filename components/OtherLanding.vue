@@ -18,7 +18,8 @@ defineProps<{
                         <span>{{ bread }}</span>
                     </div>
                     <h2>{{ title }}</h2>
-                    <p>Good health is a state of mental, physical and social well being and it does not just mean the absence diseanse!</p>
+                    <p>Good health is a state of mental, physical and social well being and it does not just mean the
+                        absence diseanse!</p>
                 </div>
 
                 <img :src="image">
@@ -27,7 +28,7 @@ defineProps<{
         </div>
 
         <div class="background">
-            <img src="../public/images/background/landing-background.png" >
+            <img src="../public/images/background/landing-background.png">
             <div class="layer"></div>
         </div>
     </section>
@@ -46,7 +47,7 @@ defineProps<{
 
 
 
-.landing .background{
+.landing .background {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -55,14 +56,14 @@ defineProps<{
     z-index: -5;
 }
 
-.landing .background img{
+.landing .background img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
 
-.landing .background .layer{
+.landing .background .layer {
     position: absolute;
     z-index: -4;
     right: 0;
@@ -70,7 +71,6 @@ defineProps<{
     height: 100%;
     background-color: hsla(198, 100%, 43%, 0.3);
     width: calc((100% - var(--max-page-width)) * 0.5 + 355px);
-    
 }
 
 
@@ -83,35 +83,73 @@ defineProps<{
     align-items: center;
 }
 
-.landing .content .left{
+.landing .content .left {
     max-width: 510px;
     width: 100%;
 }
 
-.landing .content img{
+.landing .content img {
     display: block;
     margin-left: auto;
     margin-right: 160px;
+    max-width: 450px;
+    width: 100%;
 }
 
-.landing h2{
+.landing h2 {
     margin: 0;
     margin-top: 4px;
     margin-bottom: 16px;
 }
 
-.landing .bread{
+.landing .bread {
     display: flex;
     align-items: center;
     gap: 12px;
     color: var(--color-primary);
 }
 
-.landing .bread span{
+.landing .bread span {
     font-size: 18px;
 }
 
-.landing .content p{
+.landing .content p {
     color: var(--color-on-surface);
+}
+
+
+
+
+
+
+@media only screen and (max-width: 1000px) {
+    .landing .content {
+        margin-top: 144px;
+        grid-template-columns: 100%;
+    }
+
+
+    .landing .content img {
+        width: 90%;
+        margin-right: auto;
+    }
+
+    .landing .background .layer {
+        right: 0;
+        top: unset;
+        bottom: 0;
+        height: 50%;
+        width: 100%;
+    }
+
+}
+
+
+@media only screen and (max-width: 700px) {
+    .landing .content {
+        margin-top: 60px;
+
+    }
+
 }
 </style>
