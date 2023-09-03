@@ -1,6 +1,13 @@
 <script setup lang='ts'>
 import slugify from 'slugify'
 
+import post1 from '~/public/images/blog/post1.png'
+import post2 from '~/public/images/blog/post2.png'
+import post3 from '~/public/images/blog/post3.png'
+import post4 from '~/public/images/blog/post4.png'
+
+const posts = [post1, post2, post3, post4]
+
 import image from '~/public/images/background/landing-blogs-story.png'
 
 const readMoreUrl = '/blogs/readmore/' + slugify("Some Of The Most Common Children's Diseases")
@@ -198,6 +205,13 @@ const readMoreUrl = '/blogs/readmore/' + slugify("Some Of The Most Common Childr
 
                     <div class="card grad">
                         <h5>New Posts</h5>
+                        <div class="post" v-for="item in posts">
+                            <img :src="item">
+                            <div class="detail">
+                                <span>by <span>Creativemela</span></span>
+                                <p>Fusce tincidunt commodo sapien, quis portitor.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -468,14 +482,14 @@ const readMoreUrl = '/blogs/readmore/' + slugify("Some Of The Most Common Childr
 
 /* social */
 
-.blogs .sidebar .socials{
+.blogs .sidebar .socials {
     display: flex;
     align-items: center;
     gap: 24px;
 }
 
 
-.blogs .sidebar .socials .icon{
+.blogs .sidebar .socials .icon {
     width: 45px;
     height: 45px;
     border-radius: 50%;
@@ -483,5 +497,27 @@ const readMoreUrl = '/blogs/readmore/' + slugify("Some Of The Most Common Childr
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+
+.blogs .sidebar .card.grad{
+    background: linear-gradient(319deg, hsla(198, 100%, 43%, 0.2) 4.91%, hsla(77, 59%, 54%, 0.2) 90.27%);
+}
+
+.blogs .sidebar .post{
+    display: grid;
+    grid-template-columns: max-content 1fr ;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+
+.blogs .sidebar .post span span{
+    color: var(--color-primary);
+}
+.blogs .sidebar .post p{
+    margin: 0;
+    margin-top: 4px;
 }
 </style>
