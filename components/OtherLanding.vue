@@ -151,6 +151,11 @@ defineProps<{
 
     }
 
+
+    .landing .content p {
+        margin-bottom: 100px;
+    }
+
 }
 
 

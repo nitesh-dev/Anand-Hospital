@@ -68,7 +68,7 @@ import image from '../public/images/background/landing-service.png'
 
         </div>
     </section>
-    <Booking/>
+    <Booking />
 
     <div class="page shadow">
         <div></div>
@@ -84,7 +84,8 @@ import image from '../public/images/background/landing-service.png'
                 <div class="content">
                     <span>About ANAND Hospital</span>
                     <h3>We Are Always Ensure Best Treatment Your Child</h3>
-                    <p>Anand Children Hospital is one of the largest Pediatric Super Specialty Hospital of South Gujarat located at the center of the Surat City. It is the 1st Pediatric Hospital in Gujarat </p>
+                    <p>Anand Children Hospital is one of the largest Pediatric Super Specialty Hospital of South Gujarat
+                        located at the center of the Surat City. It is the 1st Pediatric Hospital in Gujarat </p>
                     <div class="list">
                         <ul>
                             <li>Always Open</li>
@@ -119,63 +120,65 @@ import image from '../public/images/background/landing-service.png'
 
 
 <style scoped>
-
-
 .treatment {
     margin-top: 110px;
     margin-bottom: 110px;
-    
+
 }
 
-.treatment .detail{
+.treatment .detail {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-bottom: 46px;
 }
 
-.treatment .detail .image-holder{
+.treatment .detail .image-holder {
     display: flex;
     gap: 24px;
     max-width: 428px;
+    width: 100%;
 }
 
-.treatment .image-holder img{
+.treatment .image-holder img {
     border-radius: 30px;
     object-fit: cover;
+    width: 100%;
 }
 
 
-.treatment .content span{
+.treatment .content span {
     color: var(--color-primary);
     display: block;
 }
 
-.treatment .content h3{
+.treatment .content h3 {
     margin-top: 17px;
     margin-bottom: 32px;
 }
 
-.treatment .list{
+.treatment .list {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin: 20px 0;
 }
 
-.treatment ul{
+.treatment ul {
     padding: 0;
     padding-left: 16px;
+    margin: 0;
 }
 
-.treatment ul li{
+.treatment ul li {
     margin-bottom: 8px;
 }
 
-.treatment .images{
+.treatment .images {
     display: flex;
     flex-wrap: wrap;
     gap: 32px;
 }
 
-.treatment .images img{
+.treatment .images img {
     width: 272px;
     height: 179px;
     border-radius: 30px;
@@ -220,6 +223,7 @@ import image from '../public/images/background/landing-service.png'
 
 .facilities .left img {
     height: 100%;
+    width: 100%;
     border-radius: 30px;
     object-fit: cover;
 }
@@ -250,14 +254,14 @@ import image from '../public/images/background/landing-service.png'
     gap: 60px;
 }
 
-.facilities .right .top img{
+.facilities .right .top img {
     width: 100%;
     border-bottom: 30px;
     object-fit: cover;
 }
 
 
-.facilities hr{
+.facilities hr {
     border: none;
     border-top: 1px solid #E6E6E6;
     margin: 37px 0;
@@ -272,27 +276,27 @@ import image from '../public/images/background/landing-service.png'
     gap: 32px;
 }
 
-.facilities .bottom .item p{
+.facilities .bottom .item p {
     margin: 17px 0;
     text-align: center;
     color: var(--color-on-surface);
     font-weight: 500;
 }
 
-.facilities .bottom img{
+.facilities .bottom img {
     width: 100%;
     aspect-ratio: 1/1;
 }
 
-.facilities .bottom .item .image-holder{
+.facilities .bottom .item .image-holder {
     position: relative;
 }
 
-.facilities .bottom .item .image-holder h5{
+.facilities .bottom .item .image-holder h5 {
     font-size: 18px;
 }
 
-.facilities .bottom .image-holder div{
+.facilities .bottom .image-holder div {
     position: absolute;
     top: 0;
     left: 0;
@@ -310,11 +314,11 @@ import image from '../public/images/background/landing-service.png'
 
 /* extra */
 
- .page.shadow{
+.page.shadow {
     position: relative;
- }
+}
 
- .page.shadow div{
+.page.shadow div {
     position: absolute;
     width: 360px;
     height: 360px;
@@ -323,5 +327,62 @@ import image from '../public/images/background/landing-service.png'
     transform: translateY(-50%);
     filter: blur(315px);
     z-index: -1;
- }
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1100px) {
+    .facilities .holder {
+        grid-template-columns: 100%;
+    }
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .treatment .detail {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .treatment .list {
+        grid-template-columns: 100%;
+    }
+
+
+    .treatment .detail .image-holder {
+        display: grid;
+        max-width: unset;
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+    }
+
+    .treatment .images {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 24px;
+    }
+
+    .treatment .images img{
+        width: 100%;
+    }
+
+
+}
+
+
+
+@media only screen and (max-width: 800px) {
+    .facilities .right .top {
+        grid-template-columns: 100%;
+    }
+
+    .facilities .bottom {
+        grid-template-columns: 1fr 1fr
+    }
+}
 </style>

@@ -224,4 +224,21 @@ section .left>p {
     border-radius: 50%;
 }
 
+
+
+
+
+@media only screen and (max-width: 1100px) {
+    section .page {
+        grid-template-columns: 100%;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .contact {
+        grid-template-columns: 100%;
+        gap: 32px;
+    }
+}
 </style>
