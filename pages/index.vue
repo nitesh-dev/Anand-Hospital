@@ -109,6 +109,9 @@
             </form>
 
         </div>
+
+        <img class="back" src="../public/images/outline/landing-back.png">
+
     </section>
 
     <!-- about -->
@@ -124,10 +127,19 @@
 <style scoped>
 .landing {
     min-height: 785px;
-    background-image: url('../public/images/outline/landing-back.png');
     background-position: center;
     background-size: cover;
     margin-bottom: 100px;
+    position: relative;
+}
+
+.landing .back{
+    width: 100%;
+    height: calc(100% - 32px);
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
 }
 
 .landing .page {
@@ -192,9 +204,9 @@
     align-items: center;
     background-color: rgb(255, 255, 255);
     border-radius: 32px;
-    box-shadow: 0px 25px 96px -28px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 25px 96px -28px rgba(0, 0, 0, 0.08);
     padding: 40px 40px;
-    margin-bottom: 20px;
+    margin-bottom: 32px;
 }
 
 .landing form>div {
