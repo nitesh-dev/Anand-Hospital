@@ -431,7 +431,7 @@ import image from '../public/images/background/landing-contact.png'
 
 
 .phone,
-.contact-area .right>span.phone {
+.contact-area .page>span.phone {
     display: none;
 }
 
@@ -482,7 +482,7 @@ import image from '../public/images/background/landing-contact.png'
         display: none;
     }
 
-    .phone {
+    .phone, .contact-area .page>span.phone {
         display: block;
     }
 
