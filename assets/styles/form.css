@@ -66,6 +66,10 @@ form button{
 
 
 @media only screen and (max-width: 600px){
+
+    form {
+        padding: 32px 24px;
+    }
     form .col-2 {
         grid-template-columns: 100%;
         gap: 0;

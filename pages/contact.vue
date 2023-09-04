@@ -89,6 +89,11 @@ import image from '../public/images/background/landing-contact.png'
 
     <section class="contact-area">
         <div class="page">
+            <span class="phone">Contact Now</span>
+            <h3 class="phone">Leave A Message</h3>
+            <p class="phone">we offer a wide range of comprehensive healthcare services to address all aspects of your
+                health. </p>
+
             <form>
                 <div class="col-2">
                     <div class="input">
@@ -130,14 +135,18 @@ import image from '../public/images/background/landing-contact.png'
             </form>
 
             <div class="right">
-                <span>Contact Now</span>
-                <h3>Leave A Message</h3>
-                <p>we offer a wide range of comprehensive healthcare services to address all aspects of your health. </p>
+                <span class="desktop">Contact Now</span>
+                <h3 class="desktop">Leave A Message</h3>
+                <p class="desktop">we offer a wide range of comprehensive healthcare services to address all aspects of your
+                    health. </p>
+
+
                 <div class="map">
                     <img src="../public/images/background/map.png" alt="map">
                     <div class="card">
                         <h5>Ngurah Rai Immigration Office</h5>
-                        <p>Jl. Raya Taman Jimbaran No.1, Jimbaran, Kec. Kuta Sel., Kabupaten Badung, Bali 80361, Indonesia</p>
+                        <p>Jl. Raya Taman Jimbaran No.1, Jimbaran, Kec. Kuta Sel., Kabupaten Badung, Bali 80361, Indonesia
+                        </p>
                         <div class="rating">
                             <span>4.7</span>
                             <div class="stars">
@@ -165,55 +174,57 @@ import image from '../public/images/background/landing-contact.png'
 
 
 <style scoped>
-
-
 /* ----------------- contact area -------------- */
-.contact-area{
+.contact-area {
     background-color: black;
     padding-top: 114px;
     padding-bottom: 140px;
 }
 
-.contact-area .page{
+.contact-area .page {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
-.contact-area .right>span{
+.contact-area .right>span,
+.contact-area .page>span {
     color: var(--color-primary);
     margin-bottom: 16px;
     display: block;
 }
 
-.contact-area .right h3{
+.contact-area h3 {
     color: white;
     font-size: 32px;
-    margin: 0;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
-.contact-area .right{
+.contact-area .right {
     display: flex;
     flex-direction: column;
 }
 
-.contact-area .right>p{
+.contact-area .right>p,
+.contact-area .page>p {
     margin-top: 24px;
     color: #E6E6E6;
     margin-bottom: 36px;
 }
 
-.contact-area .map{
+.contact-area .map {
     flex-grow: 1;
     position: relative;
 }
-.contact-area .map img{
+
+.contact-area .map img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 30px;
 }
 
-.contact-area .map .card{
+.contact-area .map .card {
     position: absolute;
     left: 0;
     top: 0;
@@ -225,46 +236,46 @@ import image from '../public/images/background/landing-contact.png'
     box-shadow: 0px 1px 26px 0px rgba(0, 0, 0, 0.25);
 }
 
-.contact-area .map h5{
+.contact-area .map h5 {
     font-size: 18px;
     color: black;
     margin: 0;
 }
 
-.contact-area .map p{
+.contact-area .map p {
     font-size: 14px;
     color: #7F7F7F;
     margin-bottom: 8px;
 
 }
 
-.contact-area .rating{
+.contact-area .rating {
     display: flex;
     gap: 6px;
     align-items: center;
 }
 
-.contact-area .rating span:first-child{
+.contact-area .rating span:first-child {
     font-size: 14px;
 }
 
-.contact-area .rating span:last-child{
+.contact-area .rating span:last-child {
     font-size: 14px;
     color: var(--color-primary);
 }
 
-.contact-area .rating .stars{
+.contact-area .rating .stars {
     display: flex;
     align-items: center;
     gap: 2px;
 }
 
-.contact-area .rating .stars img{
+.contact-area .rating .stars img {
     width: 14px;
     height: 14px;
 }
 
-.contact-area .map a{
+.contact-area .map a {
     font-size: 14px;
     color: var(--color-primary);
     margin-top: 10px;
@@ -272,7 +283,7 @@ import image from '../public/images/background/landing-contact.png'
     display: block;
 }
 
-.contact-area .map .card .direction{
+.contact-area .map .card .direction {
     position: absolute;
     right: 12px;
     bottom: 24px;
@@ -291,6 +302,7 @@ import image from '../public/images/background/landing-contact.png'
 .contact {
     margin-bottom: 216px;
 }
+
 .contact .page>span {
     color: var(--color-primary);
     display: block;
@@ -327,7 +339,7 @@ import image from '../public/images/background/landing-contact.png'
     flex-direction: column;
 }
 
-.contact .circle .image-holder{
+.contact .circle .image-holder {
     left: 0;
     top: 0;
     width: 100%;
@@ -337,7 +349,7 @@ import image from '../public/images/background/landing-contact.png'
     z-index: -10;
 }
 
-.contact .circle img{
+.contact .circle img {
     position: absolute;
     left: 0;
     width: 100%;
@@ -363,28 +375,29 @@ import image from '../public/images/background/landing-contact.png'
     bottom: -120px;
 }
 
-.contact .circle .line span{
+.contact .circle .line span {
     font-size: 32px;
     font-weight: 600;
     color: black;
 }
 
-.contact .circle .line hr{
+.contact .circle .line hr {
     height: 160px;
     border-left: 1px solid black;
 }
 
 
-.contact .circle.first img, .contact .circle.third img{
+.contact .circle.first img,
+.contact .circle.third img {
     bottom: 0;
 }
 
-.contact .circle.second img{
+.contact .circle.second img {
     top: 0;
 }
 
 
-.contact .circle .inner div{
+.contact .circle .inner div {
     display: flex;
     align-items: center;
     gap: 12px;
@@ -393,13 +406,13 @@ import image from '../public/images/background/landing-contact.png'
     margin-bottom: 11px;
 }
 
-.contact .inner div span{
+.contact .inner div span {
     font-size: 24px;
     font-weight: 600;
     color: var(--color-on-surface);
 }
 
-.contact .inner span{
+.contact .inner span {
     display: block;
     text-align: center;
     line-height: 161%;
@@ -416,6 +429,11 @@ import image from '../public/images/background/landing-contact.png'
 }
 
 
+
+.phone,
+.contact-area .right>span.phone {
+    display: none;
+}
 
 
 
@@ -436,4 +454,58 @@ import image from '../public/images/background/landing-contact.png'
     transform: translateY(-50%);
     filter: blur(315px);
     z-index: -1;
-}</style>
+}
+
+
+@media only screen and (max-width: 1100px) {
+    .contact .holder {
+        grid-template-columns: 100%;
+        margin-top: 160px;
+        gap: 50px;
+    }
+
+    .contact .circle.first {
+        transform: unset;
+    }
+
+    .contact .circle.third {
+        transform: unset;
+        margin-top: 200px;
+    }
+
+    .contact-area .page {
+        grid-template-columns: 100%;
+    }
+
+    .desktop,
+    .contact-area .right>span.desktop {
+        display: none;
+    }
+
+    .phone {
+        display: block;
+    }
+
+    .contact-area .map {
+        margin-top: 32px;
+    }
+
+    .contact {
+        margin-bottom: 100px;
+    }
+
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .contact-area {
+        padding-top: 40px;
+        padding-bottom: 50px;
+    }
+
+    .contact .circle img {
+        height: 80px;
+    }
+}
+</style>
