@@ -139,7 +139,7 @@ const readMoreUrl = '/blogs/readmore/' + slugify("Some Of The Most Common Childr
             <div class="image-holder">
                 <img src="~/public/images/blog/blog5.png">
                 <div>
-                    <span> ·  June 14, 2017</span>
+                    <span> · June 14, 2017</span>
                     <h4>6 Tips For Maintaining Children's Mental Health When Sick</h4>
                     <p>Anand Children Hospital is one of the largest Pediatric Super Specialty Hospital of South Gujarat
                         located at the center of the Surat City. sit amet, consectetur</p>
@@ -180,14 +180,14 @@ const readMoreUrl = '/blogs/readmore/' + slugify("Some Of The Most Common Childr
     max-width: 354px;
 }
 
-.facility .heading p{
+.facility .heading p {
     margin: 0;
     max-width: 480px;
     margin-top: 30px;
 }
 
 
-.facility .image-holder{
+.facility .image-holder {
     margin-top: 90px;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -195,7 +195,7 @@ const readMoreUrl = '/blogs/readmore/' + slugify("Some Of The Most Common Childr
     align-items: center;
 }
 
-.facility .image-holder img{
+.facility .image-holder img {
     width: 100%;
     min-height: 372px;
     object-fit: cover;
@@ -204,21 +204,22 @@ const readMoreUrl = '/blogs/readmore/' + slugify("Some Of The Most Common Childr
 }
 
 
-.facility .image-holder span{
+.facility .image-holder span {
     color: var(--color-secondary);
     display: block;
 }
-.facility .image-holder h4{
+
+.facility .image-holder h4 {
     font-size: 18px;
     margin-top: 8px;
     margin-bottom: 22px;
 }
 
-.facility .image-holder p{
+.facility .image-holder p {
     margin: 8px 0;
 }
 
-.facility .image-holder a{
+.facility .image-holder a {
     margin-top: 30px;
     display: block;
     color: var(--color-primary);
@@ -342,5 +343,61 @@ const readMoreUrl = '/blogs/readmore/' + slugify("Some Of The Most Common Childr
 .blogs .image-card a {
     color: white;
     display: block;
+}
+
+
+
+
+@media only screen and (max-width: 1100px) {
+    .blogs .contents {
+        grid-template-columns: 100%;
+        gap: 32px;
+        margin-bottom: 40px;
+    }
+
+    .blogs .inner-content {
+        flex-direction: row;
+        gap: 32px;
+    }
+
+    .blogs .image-card {
+        min-height: 417px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+
+    .blogs .contents {
+        gap: 24px;
+    }
+
+    .blogs .inner-content {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .blogs .card {
+        gap: 24px;
+    }
+
+}
+
+
+@media only screen and (max-width: 700px) {
+    .facility .heading {
+        grid-template-columns: 100%;
+        gap: 0px;
+    }
+
+    .facility .heading h3 {
+        margin-bottom: 0;
+    }
+
+    .facility .image-holder {
+        margin-top: 24px;
+        grid-template-columns: 100%;
+        gap: 24px;
+    }
+
 }
 </style>
