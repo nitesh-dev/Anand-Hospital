@@ -95,7 +95,7 @@ const readMoreUrl = '/blogs/readmore/' + slugify("Some Of The Most Common Childr
                             <div class="right">
                                 <div class="header">
                                     <h4>Towkibu Rahman</h4>
-                                    <div class="socials">
+                                    <div class="socials desk">
                                         <a href="#">
                                             <img src="~/public/images/icons/facebook-icon2.png" alt="facebook">
                                         </a>
@@ -115,6 +115,21 @@ const readMoreUrl = '/blogs/readmore/' + slugify("Some Of The Most Common Childr
                                     quam bibendum. Curabitur gravida faucibus est sit amet cursus.
                                     Duis accumsan vel arcu pretium viverra.
                                 </p>
+
+                                <div class="socials phone">
+                                    <a href="#">
+                                        <img src="~/public/images/icons/facebook-icon2.png" alt="facebook">
+                                    </a>
+                                    <a href="#">
+                                        <img src="~/public/images/icons/insta-icon2.png" alt="insta">
+                                    </a>
+                                    <a href="#">
+                                        <img src="~/public/images/icons/dribble-icon.png" alt="dribble">
+                                    </a>
+                                    <a href="#">
+                                        <img src="~/public/images/icons/be-icon.png" alt="be">
+                                    </a>
+                                </div>
 
                             </div>
 
@@ -366,14 +381,19 @@ const readMoreUrl = '/blogs/readmore/' + slugify("Some Of The Most Common Childr
 }
 
 
-.blogs .portfolio .header .socials {
+.blogs .portfolio .socials {
     display: flex;
     align-items: center;
     gap: 25px;
+    display: none;
+}
+
+.blogs .portfolio .socials.desk {
+    display: flex;
 }
 
 
-.blogs .portfolio .header .socials img {
+.blogs .portfolio .socials img {
     width: auto;
     height: 15px;
     border-radius: 0;
@@ -500,24 +520,68 @@ const readMoreUrl = '/blogs/readmore/' + slugify("Some Of The Most Common Childr
 }
 
 
-.blogs .sidebar .card.grad{
+.blogs .sidebar .card.grad {
     background: linear-gradient(319deg, hsla(198, 100%, 43%, 0.2) 4.91%, hsla(77, 59%, 54%, 0.2) 90.27%);
 }
 
-.blogs .sidebar .post{
+.blogs .sidebar .post {
     display: grid;
-    grid-template-columns: max-content 1fr ;
+    grid-template-columns: max-content 1fr;
     gap: 20px;
     align-items: center;
     margin-bottom: 24px;
 }
 
 
-.blogs .sidebar .post span span{
+.blogs .sidebar .post span span {
     color: var(--color-primary);
 }
-.blogs .sidebar .post p{
+
+.blogs .sidebar .post p {
     margin: 0;
     margin-top: 4px;
+}
+
+
+
+@media only screen and (max-width: 900px) {
+    .blogs .grid {
+        grid-template-columns: 100%;
+        gap: 32px;
+    }
+
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .blogs .sidebar .card.grad {
+        display: none;
+    }
+
+    .blogs .sidebar .card {
+        padding: 24px;
+        margin-bottom: 24px;
+    }
+
+    .blogs .portfolio .socials.desk {
+        display: none;
+    }
+
+    .blogs .portfolio .socials.phone {
+        display: flex;
+    }
+
+    .blogs .sidebar .links {
+        flex-direction: row;
+        gap: 12px;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .blogs .portfolio .folio {
+        padding: 24px 18px;
+        gap: 24px;
+    }
 }
 </style>
