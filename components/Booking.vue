@@ -240,5 +240,11 @@ section .left>p {
         grid-template-columns: 100%;
         gap: 32px;
     }
+
+    .appointment div {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+    }
 }
 </style>

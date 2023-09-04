@@ -33,8 +33,11 @@ const data = ['Search Nearest Clinic Of Bootamins', 'Select Your Services Option
                         <span>{{ index + 1 }}</span>
                         <hr>
                     </div>
-                    <h4>{{ item }}</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut lab.</p>
+                    <div>
+                        <h4>{{ item }}</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut lab.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -49,58 +52,56 @@ const data = ['Search Nearest Clinic Of Bootamins', 'Select Your Services Option
 
 
 <style scoped>
-
-
-.steps{
+.steps {
     margin-top: 110px;
     margin-bottom: 110px;
 }
 
-.steps .first{
+.steps .first {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 24px;
 }
 
-.steps .first span{
+.steps .first span {
     color: var(--color-primary);
 }
 
-.steps .first p{
+.steps .first p {
     margin: 0;
 }
 
-.steps .first h3{
+.steps .first h3 {
     margin-top: 17px;
     max-width: 450px;
 }
 
 
-.steps .last{
+.steps .last {
     margin-top: 90px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 24px;
 }
 
-.steps .card .numbering{
+.steps .card .numbering {
     display: grid;
     grid-template-columns: max-content 1fr;
     align-items: center;
     gap: 24px;
 }
 
-.steps .card .numbering hr{
+.steps .card .numbering hr {
     width: 100%;
     border: none;
     border-bottom: 1px dashed #BFBFBF;
 }
 
-.steps .card:last-child hr{
+.steps .card:last-child hr {
     border: none;
 }
 
-.steps .card .numbering span{
+.steps .card .numbering span {
     position: relative;
     width: 60px;
     height: 60px;
@@ -115,25 +116,25 @@ const data = ['Search Nearest Clinic Of Bootamins', 'Select Your Services Option
 
 
 .steps .card .numbering span::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: -1;
-  margin: -2px;
-  border-radius: inherit;
-  background-image: linear-gradient(319deg, #0098DA 4.91%, #A8CF45 90.27%)
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    margin: -2px;
+    border-radius: inherit;
+    background-image: linear-gradient(319deg, #0098DA 4.91%, #A8CF45 90.27%)
 }
 
-.steps .card h4{
+.steps .card h4 {
     margin-top: 27px;
     margin-bottom: 11px;
     max-width: 200px;
 }
 
-.steps .card p{
+.steps .card p {
     margin: 0;
 }
 
@@ -157,5 +158,63 @@ const data = ['Search Nearest Clinic Of Bootamins', 'Select Your Services Option
     transform: translateY(-50%);
     filter: blur(315px);
     z-index: -1;
+}
+
+
+
+
+
+@media only screen and (max-width: 900px) {
+    .steps .last {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+@media only screen and (max-width: 700px) {
+    .steps .first {
+        grid-template-columns: 100%;
+        gap: 24px;
+    }
+
+    .steps .last {
+        grid-template-columns: 100%;
+    }
+
+    .steps .card {
+        display: grid;
+        grid-template-columns: max-content 1fr;
+        gap: 16px;
+    }
+
+    .steps .card .numbering {
+        display: grid;
+        grid-template-rows: max-content 1fr;
+        grid-template-columns: 100%;
+        align-items: start;
+        gap: 8px;
+    }
+
+    .steps .card .numbering hr {
+        width: 0;
+        height: 100%;
+        border: none;
+        border-left: 1px dashed #BFBFBF;
+    }
+
+    .steps .card:last-child hr {
+        border: none;
+    }
+
+
+    .steps .card h4 {
+        margin-top: 8px;
+        margin-bottom: 11px;
+    }
+
+
+
+
+
 }
 </style>
